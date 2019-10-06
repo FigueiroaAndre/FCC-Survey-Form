@@ -30,8 +30,8 @@
             </div>
 
             <div class="form-row">
-                <div class="labels"><label id="number-label" for="age" class="flex-label"><span class="mandatory">*</span>Age:</label></div>
-                <div class="form-input"><input id="age" class="box-input" type="number" min="0" max="125" name="age" placeholder="Enter your Age" required></div>
+                <div class="labels"><label id="number-label" for="number" class="flex-label"><span class="mandatory">*</span>Age:</label></div>
+                <div class="form-input"><input id="number" class="box-input" type="number" min="0" max="125" name="age" placeholder="Enter your Age" required></div>
             </div>
 
             <div class="form-row">
@@ -58,6 +58,31 @@
                         <input id="definitely-not" type="radio" name="recommend" value="definitely-not"><label for="definitely-not"> Definitely not</label>
                     </fieldset>
                 </div>  
+            </div>
+            <div class="form-row">
+                <div class="labels"><label for="checkbox-fieldset" class="flex-label">Which frameworks do you think i should learn?</label></div>
+                <div class="form-input">
+                    <fieldset id="checkbox-fieldset">
+                        <fieldset>
+                            <legend>Which CSS frameworks should I learn?</legend>
+                            <input id="bootstrap" type="checkbox" name="learn" value="bootstrap"><label for="bootstrap"> Bootstrap</label><br>
+                            <input id="foundation" type="checkbox" name="learn" value="foundation"><label for="foundation"> Foundation</label><br>
+                            <input id="bulma" type="checkbox" name="learn" value="bulma"><label for="bulma"> Bulma</label><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Which JS frameworks should I learn?</legend>
+                            <input id="angular" type="checkbox" name="learn" value="angular"><label for="angular"> Angular</label><br>
+                            <input id="react" type="checkbox" name="learn" value="react"><label for="react"> React</label><br>
+                            <input id="nodejs" type="checkbox" name="learn" value="nodejs"><label for="nodejs"> Node.js</label><br>
+                        </fieldset>
+                        <input id="other" type="checkbox" name="learn" value="other"><label for="other"> Other</label>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="labels"><label for="suggestion" class="flex-label">Any Comments or Suggestions?</label></div>
+                <div class="form-input"><textarea name="suggestion" id="suggestion" cols="30" rows="10" placeholder="Enter your comment here..."></textarea></div>
             </div>
 
             <div class="form-row">
