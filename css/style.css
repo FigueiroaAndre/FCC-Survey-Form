@@ -43,6 +43,14 @@ legend {
     display: none;
 }
 
+select {
+    height: 35px;
+    width: 140px;
+    padding: 5px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+
 .box-input {
     width: 70%;
 }
@@ -95,11 +103,45 @@ legend {
 }
 
 @media screen and (max-width: 720px){
+    textarea{
+        max-width: 100%;
+    }
+    
     body{
         margin: auto 0;
     }
-    
-    #form-container{
+
+    fieldset{
         width: 100%;
+    }
+
+    select{
+        width: 100%;
+    }
+
+    .box-input{
+        width: 100%;
+    }
+    
+    .flex-label{
+        text-align: center;
+    }
+
+    .form-input{
+        margin: auto;
+        padding-top: 10px;
+        width: 70%;
+    }
+
+    .form-row{
+        flex-direction: column;
+    }
+
+    .labels{
+        margin: auto;
+    }
+
+    #form-container{
+        width: 80%;
     }
 }
