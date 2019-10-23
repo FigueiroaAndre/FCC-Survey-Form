@@ -144,4 +144,10 @@ select {
     #form-container{
         width: 80%;
     }
+
+    #submit-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
